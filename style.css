@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(99,91,77,1) 65%, rgba(229,240,227,1) 100%);
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.typing-demo {
+    width: 90%;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: monospace;
+    font-size: 14px;
+}
+.author {
+    width: 80%;
+    text-align: right;
+    margin-top: 30px;
+    font-family: 'Times New Roman', serif;
+    font-size: 12px;
+    animation: appearance 3s forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes blink {
+    50% { border-color: transparent }
+}
+@keyframes appearance {
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
